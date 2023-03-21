@@ -219,18 +219,19 @@
         </div>
       </div>
       <script>
-        let currentIndex = 0;
-  const reviewContainers = document.querySelectorAll('.review-container');
-  
-  function scrollReviews() {
-    currentIndex++;
-    if (currentIndex >= reviewContainers.length) {
-      currentIndex = 0;
-    }
-    reviewContainers[currentIndex].scrollIntoView({ behavior: 'smooth' });
-  }
-  
-  setInterval(scrollReviews, 500);
+     
+          
+          const reviews = document.querySelector('.review.container');
+let scrollInterval;
+
+function startScroll() {
+  scrollInterval = setInterval(() => {
+    review.conatainer.scrollLeft += 420;
+  }, 2000);
+}
+
+startScroll();
+
     </script>
     </div>
 </body>
