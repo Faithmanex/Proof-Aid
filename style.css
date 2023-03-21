@@ -2,6 +2,7 @@ body {
     margin: 0;
     scroll-behavior: auto;
     scroll-snap-type: proximity;
+    min-width: 580px;
 }
 
 header {
@@ -71,11 +72,17 @@ header .row {
 .container-1 {
     background-image: url(magicpattern.png);
     display: flex;
+    background-repeat: none;
+    background-position: center;
     height: 580px;
     padding-left: 5%;
     padding-right: 5%;
     border-bottom-left-radius: 2%;
     border-bottom-right-radius: 2%;
+}
+
+.container-1 .text {
+    width: 50%;
 }
 
 .container-1 div h1 {
@@ -88,7 +95,6 @@ header .row {
 
 .container-1 div p {
     font-size: 30px;
-    font-family: 'Times New Roman';
 }
 
 .container-1 div h1,
@@ -198,22 +204,23 @@ header .row {
 }
 
 .card:hover:nth-child(1) {
-    transition: all 1s;
+    transition: all .6s;
     height: 465px;
+    width: 450px;
     background: linear-gradient(360deg, #ffffff 60%, hsla(0, 0%, 13%, 1) 70%);
 }
 
 .card:hover:nth-child(2) {
     height: 465px;
-    transition: all 1s;
-
+    width: 450px;
+    transition: all .6s;
     background: linear-gradient(360deg, #ffffff 60%, hsla(0, 0%, 13%, 1) 70%);
 }
 
 .card:hover:nth-child(3) {
-    height: 465px;
-    transition: all 1s;
-
+    height: 465px;    
+    width: 450px;
+    transition: all .6s;
     background: linear-gradient(360deg, #ffffff 60%, hsla(0, 0%, 13%, 1) 70%);
 }
 
@@ -303,7 +310,7 @@ header .row {
     border: solid #00b300 .1px;
     border-radius: 10px;
     margin: auto;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     text-align: center;
     box-shadow: 0px 0px 5px 2px #00b300;
     transition: all .2s;
@@ -451,4 +458,91 @@ header .row {
 
 .col-12 {
     width: 100%;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 780px) {
+    body {
+        width: 100%;
+    }
+
+    .container-1 {
+        background-image: url(magicpattern.png);
+        display: flex;
+        height: 580px;
+        padding-left: 5%;
+        padding-right: 5%;
+        border-bottom-left-radius: 2%;
+        border-bottom-right-radius: 2%;
+    }
+
+    
+    .container-1 .text {
+        width: 100%;
+    }
+    .container-1 .image {
+        display: none;
+    }
+
+    .container-1 div h1 {
+        font-size: 50px;
+        letter-spacing: 4px;
+        line-height: 60px;
+    }
+    
+    
+.container-2 {
+    display: block;
+    padding-top: 40px;
+    min-height: 500px;
+}
+
+
+.container-2 div {
+    width: 100%;
+    min-width: 310px;
+}
+
+.container-2 .img-container {
+    display: flex;
+}
+
+.container-2 img {
+    min-width: 410px;
+}
+
+.container-2 .article {
+    padding: 0 13%;
+    width: 70%;
+    min-width: 410px;
+    margin-top: -60%;
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 0px 5px 3px  #000000;
+
+}
+
+
+.container-2 .article h1 {
+    font-family: 'Segoe UI';
+    line-height: 35px;
+    font-size: 30px;
+}
+
+.container-2 .article p {
+    font-family: Tahoma;
+    line-height: 30px;
+    font-size: 18px;
+}
+.qwerty {
+    height: 500px;
+    display:grid;
+}
+
+
 }
