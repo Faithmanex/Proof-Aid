@@ -17,6 +17,7 @@ header {
 header .row {
     border-bottom: #ffffff;
 }
+
 .header-logo {
     background-color: rgb(255, 255, 255);
     width: 130px;
@@ -106,6 +107,7 @@ header .row {
     color: #051e10;
 
 }
+
 .curve {
     position: relative;
     z-index: 2;
@@ -113,8 +115,8 @@ header .row {
     margin-top: -95px;
     background-color: white;
     padding-bottom: 20px;
-  border-bottom-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
 }
 
 .container-2 div {
@@ -263,7 +265,7 @@ header .row {
     font-weight: 300;
     line-height: 35px;
     transition: all 1s;
-    
+
 }
 
 .card .content p:hover {
@@ -283,7 +285,7 @@ header .row {
 }
 
 .container-4 {
-    height: 500px;
+    height: 380px;
     overflow: hidden;
 }
 
@@ -309,62 +311,95 @@ header .row {
 
 .rating-container:hover {
     transition: all .5s;
-    box-shadow: 0px 0px 20px 5px #009b00;   
+    box-shadow: 0px 0px 20px 5px #009b00;
 }
 
 .rating-container .rating {
-    font-family:Tahoma;
+    font-family: Tahoma;
     color: #353535;
 }
 
 .container-5 {
     display: flex;
     justify-content: center;
-  }
-  .customer-reviews {
+}
+
+.customer-reviews {
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
     width: 60%;
-  }
-  
-  .review-container {
+}
+
+.review-container {
     display: inline-flex;
     flex-direction: column;
     scroll-behavior: auto;
     scroll-snap-type: proximity;
     scroll-snap-align: center;
     padding: 0 10% 0 10%;
-    margin-top:0;
+    margin-top: 0;
     min-width: 80%;
-  }
-  
-  .review-container img {
+    animation: scroll 10s infinite;
+}
+
+
+@keyframes scroll {
+    13.6% {
+        transform: translateX(0);
+    }
+
+    16.6% {
+        transform: translateX(-100%);
+    }
+
+    47% {
+        transform: translateX(-100%);
+    }
+
+    49.99% {
+        transform: translateX(-200%);
+    }
+
+    78% {
+        transform: translateX(-200%);
+    }
+
+    83.3% {
+        transform: translateX(-0%);
+    }
+    100% {
+        transform: translateX(-0%);
+    }
+}
+
+.review-container img {
     width: 200px;
     margin: auto;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
-  }
-  
-  .customer-name {
+}
+
+.customer-name {
     margin-top: 0;
     text-align: right;
     font-family: 'Lucida Sans';
     font-style: italic;
-  }
-  
-  .customer-name span {
-    font-weight:900;
-  }
-  .review {
+}
+
+.customer-name span {
+    font-weight: 900;
+}
+
+.review {
     font-size: 17px;
     line-height: 1.5;
     text-align: center;
-    word-wrap:normal;
-  }
-  
+    word-wrap: normal;
+}
+
 .row {
     width: 100%;
     display: flex;
